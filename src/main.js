@@ -14,7 +14,7 @@ Vue.use(BootstrapVue)
 Vue.use(VueCookies)
 Vue.use(VueAxios, axios)
 Vue.config.productionTip = false
-axios.defaults.baseURL = 'http://localhost/api_daily_scrum/public/api/'
+axios.defaults.baseURL = 'http://localhost:8001/api'
 const token = localStorage.getItem('Authorization')
 if (token) {
   Vue.prototype.$http.defaults.headers.common['Authorization'] = token
